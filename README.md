@@ -1,1 +1,1 @@
-# Dual-Filtering Range-Based 3D Localization System with Deterministic Uncertainty Estimations
+# Parallel Range-Based 3D Localization System with Deterministic Safety Bound Estimations
