@@ -1,0 +1,17 @@
+<!-- roslaunch uwb_loc nooploop.launch -->
+
+<launch>
+    <node pkg="uwb_loc" type="tracking_node" name="tracking" output="screen"/>
+    <node pkg="uwb_loc" type="bounding_node" name="bound" output="screen"/>
+    <node pkg="uwb_loc" type="ba_node" name="ba" output="screen"/>
+    <param name="config_file_path" type="string" value="/home/ws_example/src/uwb_loc/config/nooploop.yaml"/>
+
+    <param name="/use_sim_time" value="true"/>
+    
+    <arg name="bag_file" default = "/your_path/uwb_data.bag" />
+    <node pkg="rosbag" type="play" name="rosbag_play" args="--clock $(arg bag_file)"/>
+    
+    <node pkg="rviz" type="rviz" name="rviz" respawn="true" 
+     args="-d $(find uwb_loc)/config/rviz.rviz" />
+
+</launch>
