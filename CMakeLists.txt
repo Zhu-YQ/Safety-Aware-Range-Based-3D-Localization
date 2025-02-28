@@ -23,7 +23,9 @@ add_definitions(${EIGEN_DEFINITIONS})
 find_package(OpenCV REQUIRED)
 
 # personal g2o configs here
-
+find_package(G2O REQUIRED)
+include_directories(${G2O_INCLUDE_DIR})
+set(G2O_LIBS g2o_csparse_extension g2o_stuff g2o_core g2o_solver_csparse g2o_csparse_extension g2o_types_slam3d cxsparse)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
