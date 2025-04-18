@@ -1,5 +1,5 @@
 # Safety-Aware Range-Based 3D Localization
-Submitted to IROS2025. The full code will be released if the paper is accepted.
+Submitted to IROS2025. The full version of code will be released if the paper is accepted.
 
 ## 1. Prerequisites
 ### 1.1 Ubuntu and ROS
