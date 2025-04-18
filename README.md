@@ -17,6 +17,21 @@ Submitted to IROS2025. The full code will be released if the paper is accepted.
 
 ## 2. Build
 
+```
+cd catkin_workspace/src
+git clone https://github.com/Zhu-YQ/Safety-Aware-Range-Based-3D-Localization.git 
+cd ../
+catkin_make
+```
+
 
 
 ## 3. Run
+
+A rosbag for simulation is provided. You can play it directly to check the effect of this system.
+
+```
+source devel/setup.bash
+roslaunch uwb_loc run_sim.launch
+```
+
